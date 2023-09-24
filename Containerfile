@@ -8,7 +8,7 @@ USER myuser
 COPY index.html /usr/share/nginx/html/index.html
 
 # Set up access logging to be written to the mounted directory
-RUN ln -sf /dev/stdout /var/log/nginx/access.log
+# RUN ln -sf /dev/stdout /var/log/nginx/access.log
 
 # Expose Nginx HTTP port
 EXPOSE 80
